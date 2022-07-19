@@ -37,6 +37,7 @@ namespace AddAndRemoveForm
             // 
             // buttonAdd
             // 
+            this.buttonAdd.Enabled = false;
             this.buttonAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonAdd.Location = new System.Drawing.Point(23, 191);
             this.buttonAdd.Name = "buttonAdd";
@@ -44,6 +45,7 @@ namespace AddAndRemoveForm
             this.buttonAdd.TabIndex = 0;
             this.buttonAdd.Text = "+";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // listBoxWithWords
             // 
@@ -54,6 +56,7 @@ namespace AddAndRemoveForm
             this.listBoxWithWords.Name = "listBoxWithWords";
             this.listBoxWithWords.Size = new System.Drawing.Size(187, 304);
             this.listBoxWithWords.TabIndex = 1;
+            this.listBoxWithWords.SelectedIndexChanged += new System.EventHandler(this.listBoxWithWords_SelectedIndexChanged);
             // 
             // textBoxToAddWords
             // 
@@ -62,9 +65,11 @@ namespace AddAndRemoveForm
             this.textBoxToAddWords.Name = "textBoxToAddWords";
             this.textBoxToAddWords.Size = new System.Drawing.Size(187, 35);
             this.textBoxToAddWords.TabIndex = 2;
+            this.textBoxToAddWords.TextChanged += new System.EventHandler(this.textBoxToAddWords_TextChanged);
             // 
             // buttonRemove
             // 
+            this.buttonRemove.Enabled = false;
             this.buttonRemove.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonRemove.Location = new System.Drawing.Point(281, 191);
             this.buttonRemove.Name = "buttonRemove";
@@ -72,6 +77,7 @@ namespace AddAndRemoveForm
             this.buttonRemove.TabIndex = 3;
             this.buttonRemove.Text = "-";
             this.buttonRemove.UseVisualStyleBackColor = true;
+            this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
             // AddAndRemoveForm
             // 
